@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GameStorm – Login / Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/logo-icon.png" alt="GameStorm Logo" class="logo-icon">
+            <div class="logo">GameStorm</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heroes.html">Heroes</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="icon">🌐</div>
+            <button class="play-btn">PLAY FREE</button>
+        </div>
+    </nav>
+
+    <section class="auth-page">
+        <div class="auth-card">
+
+            <h1>Login</h1>
+            <p class="auth-subtitle">Sign in to sync your progress and settings.</p>
+
+            <form class="auth-form">
+                <label>
+                    Email
+                    <input type="email" placeholder="you@example.com"/>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" placeholder="Enter your password"/>
+                </label>
+                <p id="login-error" style="color: red; font-size: 14px; margin-top: 5px;"></p>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+
+            <div class="auth-divider">
+                <span></span>
+                <p>or create a new account</p>
+                <span></span>
+            </div>
+
+            <form class="auth-form">
+                <label>
+                    Username
+                    <input type="text" placeholder="In-game name" required />
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" placeholder="you@example.com" required />
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" placeholder="Create a password" required />
+                </label>
+
+                <button type="submit" class="auth-btn secondary">Register</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+
+</html>
